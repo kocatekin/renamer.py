@@ -2,8 +2,8 @@ import random
 import os
 
 def main():
-    #formatname = input("which file format? enter such : txt \n")
-    formatname = "mp4"
+    formatname = input(">> which file format? enter such: txt \n")
+    #formatname = "jpg"
     for file in os.listdir():
         if file.endswith(formatname):
             os.rename(file, f"{rndfilename()}.{formatname}")
